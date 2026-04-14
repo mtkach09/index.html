@@ -648,6 +648,15 @@
   .page.active .animate { animation: fadeUp 0.5s ease forwards; }
   .page.active .animate-delay-1 { animation-delay: 0.1s; opacity: 0; animation: fadeUp 0.5s 0.1s ease forwards; }
   .page.active .animate-delay-2 { animation-delay: 0.2s; opacity: 0; animation: fadeUp 0.5s 0.2s ease forwards; }
+
+  .small-btn {
+  width: auto !important;
+  max-width: 220px;
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 30px;
+  display: inline-block;
+}
 </style>
 </head>
 <body>
@@ -1093,10 +1102,9 @@
     <textarea name="message" placeholder="Tell us more..." required></textarea>
   </div>
 
-<div style="text-align:center; margin-top:20px;">
-  <button type="submit" class="btn-form" style="width:fit-content; padding:14px 32px; display:inline-block;">
-    Send Message
-  </button>
+<button type="submit" class="btn-form small-btn">
+  Send Message
+</button>
 </div>
   
 </form>
